@@ -1,3 +1,8 @@
+//function below formates values  which we received from the form
+//deleting some fields, that are not neccessary for selected type of dish
+// formatting preparationTime,
+//formatting type of the dish to localCase
+
 export const formatDishObject = ({
   name,
   preparation_time,

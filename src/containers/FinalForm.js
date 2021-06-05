@@ -27,7 +27,6 @@ function FinalForm() {
     setIsLoading(true);
     try {
       const res = await axios.post(POST_URL, dishObj);
-      const { data } = res;
 
       setIsLoading(false);
       setSuccessPost(true);
