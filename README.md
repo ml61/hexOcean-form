@@ -19,6 +19,9 @@ Screenshots from this mini-app are below:
 3) Successfully added dish (you can see response data in console). After successfully posted dish button is disabled for 3 seconds and form is resetted:
 ![image](https://user-images.githubusercontent.com/74111728/120899741-7dba7180-c631-11eb-8678-94c76b7f876c.png)
 
-4) if would be some server errors, bootstrap-alert will show a message of this error to a user, form won't be reseted.
+4) if would be some server errors, bootstrap-alert will show a message of this error to a user, form won't be reseted. I added a test button for making a bad request to a server.
+![image](https://user-images.githubusercontent.com/74111728/120937712-44f0ca00-c70f-11eb-807b-5854b897a183.png)
+
+
 
 
