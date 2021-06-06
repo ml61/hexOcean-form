@@ -11,7 +11,7 @@ import {
   formatDishObject,
   handleServerError,
 } from "../helpers/helperFunctions";
-import { POST_URL } from "../api/urls";
+import { POST_URL, BAD_REQUEST_DISH } from "../api/constants";
 
 import GeneralFieldsOfForm from "../components/GeneralFieldsOfForm";
 import PizzaForm from "../components/PizzaForm";
@@ -27,6 +27,7 @@ function FinalForm() {
     setIsLoading(true);
     try {
       const res = await axios.post(POST_URL, dishObj);
+      console.log(res.data);
 
       setIsLoading(false);
       setSuccessPost(true);
@@ -82,6 +83,18 @@ function FinalForm() {
           Submit Dish
         </Button>
       </Form>
+
+      {/* Button below is only for testing!! */}
+      <Button
+        type="submit"
+        className="mt-5"
+        style={{ width: "100%" }}
+        disabled={isLoading || successPost || error}
+        variant="danger"
+        onClick={() => postDish(BAD_REQUEST_DISH)}
+      >
+        Make Bad request
+      </Button>
     </div>
   );
 }
